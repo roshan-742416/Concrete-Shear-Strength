@@ -11,10 +11,7 @@ def shear_strength():
     df.index = [0, 0.15, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3]
     x = np.array(df.columns)
     y = np.array(df.index)
-    z = np.array([np.array(df.loc[0.0]), np.array(df.loc[0.15]), np.array(df.loc[0.25]), np.array(df.loc[0.5]),
-                  np.array(df.loc[0.75]), np.array(df.loc[1.0]), np.array(df.loc[1.25]), np.array(df.loc[1.5]),
-                  np.array(df.loc[1.75]), np.array(df.loc[2.0]), np.array(df.loc[2.25]), np.array(df.loc[2.5]),
-                  np.array(df.loc[2.75]), np.array(df.loc[3.0])])
+    z = df.values
     print(x)
     print(y)
     print(z)
