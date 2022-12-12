@@ -9,8 +9,8 @@ from scipy.interpolate import interp2d
 def shear_strength():
     df = pd.read_csv('shear.csv')
     df.index = [0, 0.15, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3]
-    x = np.array(df.columns)
-    y = np.array(df.index)
+    x = df.columns
+    y = df.index
     z = df.values
     print(x)
     print(y)
