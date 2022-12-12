@@ -12,9 +12,6 @@ def shear_strength():
     x = df.columns
     y = df.index
     z = df.values
-    print(x)
-    print(y)
-    print(z)
     f = interp2d(x, y, z, kind='linear')
     grade = int(input("Enter grade of concrete:"))
     percent_steel = float(input("Enter percent steel:"))
