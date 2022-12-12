@@ -1,4 +1,4 @@
-# Concrete SHear Strength
+# Concrete Shear Strength
 # From Table 19 - IS456:2000
 # Design strength of concrete TAUc in N/mm-2
 import numpy as np
