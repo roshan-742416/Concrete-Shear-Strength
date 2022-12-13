@@ -1,7 +1,6 @@
 # Concrete Shear Strength
 # From Table 19 - IS456:2000
 # Design strength of concrete TAUc in N/mm-2
-import numpy as np
 import pandas as pd
 from scipy.interpolate import interp2d
 
